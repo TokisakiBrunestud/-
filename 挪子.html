@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生个人主页</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6f7ff;
+            color: #333;
+        }
+
+        /* 头部样式 */
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* 导航栏样式 */
+        nav {
+            background-color: #0056b3;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ccc;
+        }
+
+        /* 主体内容样式 */
+        main {
+            padding: 20px;
+        }
+
+        /* 首页大图样式 */
+        #home-image {
+            width: 100%;
+            height: 300px;
+            background-image: url('code_and_badminton.jpg'); /* 替换为相关图片路径 */
+            background-size: cover;
+            background-position: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 滚动文字样式 */
+        marquee {
+            font-size: 20px;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        /* 关于我部分样式 */
+        #about-me {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            line-height: 1.5;
+        }
+
+        /* 爱好部分样式 */
+        #hobbies {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* 爱好部分的图标和描述样式 */
+        #hobbies div {
+            text-align: center;
+            width: 48%;
+        }
+
+        #hobbies img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        /* 项目部分样式 */
+        #projects {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        /* 页脚样式 */
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <h1>我的个人主页</h1>
+    </header>
+
+    <!-- 导航栏 -->
+    <nav>
+        <ul>
+            <li><a href="#home">首页</a></li>
+            <li><a href="#about-me">关于我</a></li>
+            <li><a href="#hobbies">爱好</a></li>
+            <li><a href="#projects">项目</a></li>
+        </ul>
+    </nav>
+    <img src="头像.png" alt="">
+    <!-- 主体内容 -->
+    <main>
+        <!-- 首页大图 -->
+         
+        <div id="home-image">
+            <p>
+                大家好，欢迎来到我的个人主页。
+    
+    我是李欢麒，是一名学生。我的生活主要围绕着两个重要部分：程序设计和羽毛球。
+    
+    在程序设计领域，我有着浓厚的兴趣和积极的探索态度。编程对我来说是一个将思维转化为实际应用的过程。我会认真对待编程中的各种问题，无论是算法难题还是软件设计要求，都努力通过严谨的逻辑分析和持续的实践来解决和完善。通过参与编程项目，我逐步积累了相关经验，提升了自己的能力。
+    
+    羽毛球在我的课余生活中占据重要地位。这项运动我十分喜爱，在球场上，我注重每一个动作的规范和技巧的运用。打球过程中，我体会到了团队协作的重要性，也理解了竞争所带来的挑战和机遇。它帮助我保持身体健康和心理的坚韧，让我学会在不同的情境下保持稳定的心态。
+    
+    这就是我的基本情况，希望能通过这个主页让你对我有更清晰的了解。
+             </p>
+        </div>
+        
+        <!-- 滚动文字 -->
+        <marquee>屏幕前的各位大家好,<s>我是练习时长两年半的李欢麒,喜欢唱跳rap篮球</s></marquee>
+
+        <!-- 关于我部分 -->
+        <section id="about-me">
+            <h2>关于我</h2>
+            <p>大家好，我是一名充满热情的学生，对程序设计和羽毛球有着浓厚的兴趣。在程序设计的世界里，我享受着创造和解决问题的乐趣；在羽毛球场上，我挥洒汗水，释放活力。(此乃谎言)</p>
+        </section>
+
+        <!-- 爱好部分 -->
+        <section id="hobbies">
+            <div>
+                <img src="程序员.png" alt="程序设计图标">
+                <h3>程序设计</h3>
+                <p>我热爱编写代码，从简单的算法到复杂的应用程序，我不断探索编程的奥秘。</p>
+            </div>
+            <div>
+                <img src="羽毛球.png" alt="羽毛球图标">
+                <h3>羽毛球</h3>
+                <p>羽毛球是我生活中不可或缺的一部分，它让我保持健康和活力。</p>
+            </div>
+        </section>
+
+        <!-- 项目部分 -->
+        <section id="projects">
+            <h2>获奖经历</h2>
+            <ul>
+                <li>信息奥赛省二</li>
+                <li><s>薛定谔态的</s>acm国一</li>
+                <li>“野坤杯”羽毛球一等奖</li>
+
+            </ul>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        &copy; 2024 [你的名字]. All rights reserved.
+    </footer>
+</body>
+
+</html>
